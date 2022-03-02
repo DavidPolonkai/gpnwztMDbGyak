@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GPNWZT_XMLSCHEMA.xsd">
+<etterem ekod="e1">
+    <nev>Trófea</nev>
+    <csillag>4</csillag>
+    <cim>
+        <varos>
+            Budapest
+        </varos>
+        <utca>
+            Budafoki út
+        </utca>
+        <hazszám>
+            13
+        </hazszám>
+    </cim>
+</etterem>
+
+<foszakacs fkod="f1" e_f="e1">
+    <nev>
+        Havas Péter
+    </nev>
+    <eletkor>35</eletkor>
+    <vegzettseg>Szakközépiskola</vegzettseg>
+    <vegzettseg>Főző iskola</vegzettseg>
+</foszakacs>
+
+<szakacs szkod="sz1" e_sz="e1">
+    <nev>Hufnágel István</nev>
+    <reszleg>Saucier</reszleg>
+    <vegzettseg>Szakiskola</vegzettseg>
+</szakacs>
+
+<szakacs szkod="sz2" e_sz="e1">
+    <nev>Hufnágel János</nev>
+    <reszleg>Frying pan package pusher</reszleg>
+    <vegzettseg>Szakiskola</vegzettseg>
+</szakacs>
+
+
+<gyakornok gykod="gy1" e_gy="e1">
+    <nev>Alfréd</nev>
+    <gyakorlat>
+        <kezdete>1999.01.01</kezdete>
+        <idotartam>20</idotartam>
+    </gyakorlat>
+    <muszak>Délelőtt</muszak>
+    <muszak>Délután</muszak>
+</gyakornok>
+
+
+<gyakornok gykod="gy2" e_gy="e1">
+    <nev>Béla</nev>
+    <gyakorlat>
+        <kezdete>1999.01.01</kezdete>
+        <idotartam>20</idotartam>
+    </gyakorlat>
+    <muszak>Délelőtt</muszak>
+    <muszak>Délután</muszak>
+</gyakornok>
+
+
+<gyakornok gykod="gy3" e_gy="e1">
+    <nev>Cecil</nev>
+    <gyakorlat>
+        <kezdete>1999</kezdete>
+        <idotartam>20</idotartam>
+    </gyakorlat>
+    <muszak>Délelőtt</muszak>
+    <muszak>Délután</muszak>
+</gyakornok>
+
+
+
+<vendegek vkod="v1" e_v="e1">
+    <nev>Polonkai Dávid</nev>
+    <cim>
+        <város>Ózd</város>
+        <utca>Egy út</utca>
+        <házszám>3</házszám>
+    </cim>
+    <eletkor>21</eletkor>
+</vendegek>
+
+<vendegek vkod="v2" e_v="e1">
+    <nev>Holló Herold</nev>
+    <cim>
+        <város>Almaland</város>
+        <utca>Fa út</utca>
+        <házszám>3</házszám>
+    </cim>
+    <eletkor>10</eletkor>
+</vendegek>
+
+<rendelés r_e="e1" r_v="v1">
+<osszeg>9999</osszeg>    
+<etel>Hordós káposzta</etel>
+</rendelés>
+
+<rendelés r_e="e1" r_v="v2">
+<osszeg>1000</osszeg>    
+<etel>Mackó sajt</etel>
+</rendelés>
+
+</vendeglatas>
