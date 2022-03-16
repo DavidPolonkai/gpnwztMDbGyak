@@ -11,9 +11,9 @@
         <utca>
             Budafoki út
         </utca>
-        <hazszám>
+        <hazszam>
             13
-        </hazszám>
+        </hazszam>
     </cim>
 </etterem>
 
@@ -93,14 +93,14 @@
     <eletkor>10</eletkor>
 </vendegek>
 
-<rendelés r_e="e1" r_v="v1">
+<rendeles r_e="e1" r_v="v1">
 <osszeg>9999</osszeg>    
 <etel>Hordós káposzta</etel>
-</rendelés>
+</rendeles>
 
-<rendelés r_e="e1" r_v="v2">
+<rendeles r_e="e1" r_v="v2">
 <osszeg>1000</osszeg>    
 <etel>Mackó sajt</etel>
-</rendelés>
+</rendeles>
 
 </vendeglatas>
