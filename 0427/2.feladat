@@ -1,0 +1,39 @@
+
+create (c:City {name:"A"});
+create (c:City {name:"B"});
+create (c:City {name:"C"});
+create (c:City {name:"D"});
+create (c:City {name:"E"});
+create (c:City {name:"F"});
+create (c:City {name:"G"});
+create (c:City {name:"H"});
+create (c:City {name:"I"});
+create (c:City {name:"J"});
+create (c:City {name:"K"});
+create (c:City {name:"L"});
+create (c:City {name:"M"});
+create (c:City {name:"N"});
+create (c:City {name:"O"});
+
+match (c1:City {name:"A"}), (c2:City {name:"B"}) create (c1)-[:leadsTo {distance: 12}]->(c2);
+match (c1:City {name:"B"}), (c2:City {name:"C"}) create (c1)-[:leadsTo {distance: 22}]->(c2);
+match (c1:City {name:"C"}), (c2:City {name:"D"}) create (c1)-[:leadsTo {distance: 1}]->(c2);
+match (c1:City {name:"D"}), (c2:City {name:"A"}) create (c1)-[:leadsTo {distance: 11}]->(c2);
+match (c1:City {name:"C"}), (c2:City {name:"E"}) create (c1)-[:leadsTo {distance: 34}]->(c2);
+match (c1:City {name:"E"}), (c2:City {name:"F"}) create (c1)-[:leadsTo {distance: 55}]->(c2);
+match (c1:City {name:"F"}), (c2:City {name:"G"}) create (c1)-[:leadsTo {distance: 14}]->(c2);
+match (c1:City {name:"G"}), (c2:City {name:"H"}) create (c1)-[:leadsTo {distance: 32}]->(c2);
+match (c1:City {name:"H"}), (c2:City {name:"I"}) create (c1)-[:leadsTo {distance: 37}]->(c2);
+match (c1:City {name:"I"}), (c2:City {name:"E"}) create (c1)-[:leadsTo {distance: 48}]->(c2);
+match (c1:City {name:"K"}), (c2:City {name:"L"}) create (c1)-[:leadsTo {distance: 99}]->(c2);
+match (c1:City {name:"L"}), (c2:City {name:"M"}) create (c1)-[:leadsTo {distance: 123}]->(c2);
+match (c1:City {name:"M"}), (c2:City {name:"N"}) create (c1)-[:leadsTo {distance: 3}]->(c2);
+match (c1:City {name:"N"}), (c2:City {name:"O"}) create (c1)-[:leadsTo {distance: 12}]->(c2);
+match (c1:City {name:"O"}), (c2:City {name:"K"}) create (c1)-[:leadsTo {distance: 34}]->(c2);
+match (c1:City {name:"K"}), (c2:City {name:"M"}) create (c1)-[:leadsTo {distance: 54}]->(c2);
+match (c1:City {name:"A"}), (c2:City {name:"H"}) create (c1)-[:leadsTo {distance: 54}]->(c2);
+
+
+match (A:City {name:"A"})-[*4]-(c:City {name:"F"}) with count(A) as rodes return rodes
+
+match (A:City {name:"A"})-[*..]-(c:City) return c
